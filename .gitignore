@@ -4,3 +4,6 @@
 # virtualenv
 /venv
 ENV/
+
+# other
+/database/chains.db

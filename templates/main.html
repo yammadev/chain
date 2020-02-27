@@ -2,7 +2,7 @@
 <html lang="ENG">
 	<head>
 		<meta charset="UTF-8">
-		<title>Chain Saver!</title>
+		<title>{% block title %}{% endblock %} - Chain Saver!</title>
 
 		<!-- Import MD5 from lib -->
 		<script src="{{ url_for ('static', filename='js/md5.min.js') }}"></script>
@@ -19,13 +19,15 @@
 
   {% block content %}{% endblock %}
 
-  <!-- Links --> <!-- TODO -->
+  <!-- Links -->
   <section class="container">
     <h4>Other options</h4>
     <ul>
-      <li><a href="#!">Get full list of hashes stored</a></li>
-      <li><a href="#!">Get last hash stored in json</a></li>
-      <li><a href="#!">Get all hashes in json</a></li>
+			<li><a href="{{ url_for('index') }}">Generate a hash</a></li>
+      <li><a href="{{ url_for('list') }}">Get full list of hashes stored</a></li>
+			<li><a href="{{ url_for('last') }}">Get last hash stored</a></li>
+			<li><a href="{{ url_for('last_json') }}">Get last hash stored in json</a></li>
+			<li><a href="{{ url_for('list_json') }}">Get all hashes stored in json</a></li>
     </ul>
   </section>
 

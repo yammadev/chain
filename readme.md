@@ -1,5 +1,13 @@
 # Authors
 - Yefferson Marín
+- Jesus Caraballo
+- Edgar Ropero
+
+# Requirements
+- Python
+- Flask
+- Sqlite3
+- SQLAlchemy
 
 # Simple Guide
 ## Development
@@ -23,6 +31,9 @@
 
   # Install flask
   $ pip install Flask
+
+  # Install SQLAlchemy
+  $ pip install SQLAlchemy
 ```
 
 ### 2. Run
@@ -45,7 +56,20 @@
   # Go to http://127.0.0.1:5000
 ```
 
+### 3. Restart
+```sh
+  (venv) sqlite3 database/chains.db
+  sqlite3> $ DELETE FRON chain ;
+
+  # Close using ^Z (CTRL + Z)
+```
+
 # Simple Change log
+## [1.2.0]
+- @jesucluna `SQLAlchemy` part integrated.
+- `MD5 hash` now is stored in `SQL` database.
+- All data is return in `JSON` and in `Views`
+
 ## [1.1.0]
 - `MD5 hash` is generated based on a string in `index` template.
 - `Form` data (string, hash, algorithm) is received via `POST` method and returned as `JSON`.
