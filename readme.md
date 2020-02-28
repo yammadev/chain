@@ -8,6 +8,7 @@
 - Flask
 - Sqlite3
 - SQLAlchemy
+- Docker
 
 # Simple Development Guide
 ## Before to start
@@ -90,6 +91,9 @@
 ```
 
 # Simple Change log
+## [1.3.1]
+- `readme` minimal change.
+
 ## [1.3.0]
 - `Docker` instructions added to `Dockerfile`.
 - `Readme` updated for more detailed instructions.
