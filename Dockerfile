@@ -1,6 +1,8 @@
 FROM python:3.7-buster
 
 RUN pip install Flask
+RUN pip install SQLAlchemy
+RUN pip install FlasK-SQLAlchemy
 
 COPY init.py / 
 

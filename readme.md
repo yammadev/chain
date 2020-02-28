@@ -34,6 +34,10 @@
 
   # Install SQLAlchemy
   $ pip install SQLAlchemy
+
+  #Install Flask-SQLAlchemy
+  $ pip install Flask-SQLAlchemy
+  
 ```
 
 ### 2. Run
@@ -65,6 +69,7 @@
 ```
 
 # Simple Change log
+
 ## [1.2.0]
 - @jesucluna `SQLAlchemy` part integrated.
 - `MD5 hash` now is stored in `SQL` database.
