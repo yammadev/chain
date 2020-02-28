@@ -26,6 +26,7 @@ class Chain(db.Model):
 
 # Index route...
 # [GET]
+# @return response
 @app.route('/')
 def index():
 	return render_template('index.html')

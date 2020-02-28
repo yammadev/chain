@@ -91,11 +91,14 @@
 ```
 
 # Simple Change log
+## [1.3.3]
+- Minimal changes.
+
 ## [1.3.2]
-- `readme` minimal change.
+- `Readme` minimal change.
 
 ## [1.3.1]
-- `readme` minimal change.
+- `Readme` minimal change.
 
 ## [1.3.0]
 - `Docker` instructions added to `Dockerfile`.
