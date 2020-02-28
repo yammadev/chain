@@ -16,18 +16,6 @@
   # Clone
   $ git clone https://github.com/yammadev/chain.git
   $ cd chain
-
-  # Install virtual environment
-  $ python3 -m venv venv
-
-  # (On Windows)
-  $ py -3 -m venv venv
-
-  # Activate virtual environment
-  $ . venv/bin/activate
-
-  # (On Windows)
-  $ venv\Scripts\activate
 ```
 
 ## Docker instructions
@@ -43,8 +31,8 @@
 ### 2. Restart
 ```sh
   # Stop all containers
-  $ docker stop $(docker ps -q) 
-  
+  $ docker stop $(docker ps -q)
+
   # Remove all containers
   $ docker rm $(docker ps -aq)
 ```
@@ -52,13 +40,25 @@
 ## Direct console instructions
 ### 1. Prepare
 ```sh
+  # Install virtual environment
+  $ python3 -m venv venv
+
+  # (On Windows)
+  $ py -3 -m venv venv
+
+  # Activate virtual environment
+  $ . venv/bin/activate
+
+  # (On Windows)
+  $ venv\Scripts\activate
+
   # Install flask
   $ pip install Flask
 
   # Install SQLAlchemy
   $ pip install SQLAlchemy
 
-  #Install Flask-SQLAlchemy
+  # Install Flask-SQLAlchemy
   $ pip install Flask-SQLAlchemy
 ```
 
@@ -91,6 +91,9 @@
 ```
 
 # Simple Change log
+## [1.3.2]
+- `readme` minimal change.
+
 ## [1.3.1]
 - `readme` minimal change.
 
