@@ -9,9 +9,8 @@
 - Sqlite3
 - SQLAlchemy
 
-# Simple Guide
-## Development
-### 1. Prepare
+# Simple Development Guide
+## Before to start
 ```sh
   # Clone
   $ git clone https://github.com/yammadev/chain.git
@@ -28,7 +27,30 @@
 
   # (On Windows)
   $ venv\Scripts\activate
+```
 
+## Docker instructions
+### 1. Run and update
+```sh
+  # Create an image
+  $ docker build -t "image-name" .
+
+  # Create a container from image
+  $ docker run -p 5000:5000 "image-name"
+```
+
+### 2. Restart
+```sh
+  # Stop all containers
+  $ docker stop $(docker ps -q) 
+  
+  # Remove all containers
+  $ docker rm $(docker ps -aq)
+```
+
+## Direct console instructions
+### 1. Prepare
+```sh
   # Install flask
   $ pip install Flask
 
@@ -37,7 +59,6 @@
 
   #Install Flask-SQLAlchemy
   $ pip install Flask-SQLAlchemy
-  
 ```
 
 ### 2. Run
@@ -69,9 +90,12 @@
 ```
 
 # Simple Change log
+## [1.3.0]
+- `Docker` instructions added to `Dockerfile`.
+- `Readme` updated for more detailed instructions.
 
 ## [1.2.0]
-- @jesucluna `SQLAlchemy` part integrated.
+- `SQLAlchemy` integrated.
 - `MD5 hash` now is stored in `SQL` database.
 - All data is return in `JSON` and in `Views`
 
@@ -85,6 +109,6 @@
 
 ## [1.0.0]
 - Simple and minimal application.
-- Detailed readme.
+- Detailed `readme`.
 - Common `.gitignore` flask file.
 - Initial `Dockerfile`.
