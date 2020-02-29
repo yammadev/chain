@@ -9,11 +9,14 @@ RUN apt-get install sqlite3
 
 # Create folders 
 RUN mkdir static
+RUN mkdir static/css
+RUN mkdir static/js
 RUN mkdir templates
 RUN mkdir database
 
 # Export (copy option) from Project to Docker container
-COPY static/* static/
+COPY static/css/main.css  static/css
+COPY static/js/md5.min.js static/js
 COPY templates/* templates/
 COPY init.py / 
 

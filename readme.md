@@ -91,6 +91,9 @@
 ```
 
 # Simple Change log
+## [1.3.4]
+- `Docker` instructions updated.
+
 ## [1.3.3]
 - Minimal changes.
 
